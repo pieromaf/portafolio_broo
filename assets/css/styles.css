@@ -28,7 +28,7 @@ section.banner-size {
   display: flex;
   align-items: center;
   gap: 50px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-top: 100px;
   padding-bottom: 100px;
   min-height: 40vw;
