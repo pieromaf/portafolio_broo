@@ -83,8 +83,8 @@ section.banner-size {
 }
 
 .banner img {
-  width: 220px;
-  height: 220px;
+  width: 320px;
+  height: 3gio20px;
   object-fit: cover;
   animation: morph 3.5s linear infinite;
 }
