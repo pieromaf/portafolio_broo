@@ -244,3 +244,19 @@ footer a {
   background-color: #1f1d58;
 }
 
+.card {
+  background-color: #1f1d58;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #29277a !important;
+  border-color: #29277a;
+ }
+
+ #portfolio .image-top {
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
