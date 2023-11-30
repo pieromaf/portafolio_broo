@@ -1,24 +1,23 @@
 body {
   margin: 0;
-  background: #1f1d58;
+  background: #002C3B;
   font-family: "Euclid Circular A", "Poppins";
   color: #f7f7f7;
   margin: 0;
   height: 94vh;
   display: grid;
   height: 100%;
+}
+a:hover {
+  color: #045e7c;
+}
 
-}
-/*Nav Bar*/
-.navcolor {
-  background-color: rgba(255, 255, 255, 0);
-}
 /* Banner */
 section.bannersize {
   padding: 30px 15%;
 }
 
-@media (width <= 720px) {
+@media (width <=720px) {
   section.bannersize {
     padding: 30px 10%;
   }
@@ -36,7 +35,7 @@ section.bannersize {
   place-content: center;
 }
 
-@media (width <= 620px) {
+@media (width <=620px) {
   .banner {
     text-align: center;
     flex-direction: column-reverse;
@@ -44,12 +43,6 @@ section.bannersize {
   }
 }
 
-.banner::before {
-  content: "";
-  position: absolute;
-  translate: -50% -50%;
-  margin: 200px;
-}
 
 .banner {
   position: absolute;
@@ -58,32 +51,13 @@ section.bannersize {
   color: white;
   width: 100%;
   height: 75vh;
-  background-image: linear-gradient(
-    to bottom right,
-    #784fb3 0,
-    #4a3687 25%,
-    #1e1c58 50%,
-    #00002c 75%,
-    #000003 150%
-  );
-
-  background-size: 200% 200%;
-
-  animation: movimiento 5s linear infinite alternate;
-}
-
-@keyframes movimiento {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 100% 100%;
-  }
+  background-color: hsl(195, 100%, 7%);
+  z-index: 0;
 }
 
 .banner h2 {
   white-space: nowrap;
-  margin: 0 0 4px;
+  margin: 0 0 0px;
   font-size: 40px;
   color: rgb(255 255 255 / 96%);
 }
@@ -91,17 +65,20 @@ section.bannersize {
 .banner h3 {
   font-weight: 400;
   margin: 0;
-  color: rgb(255 255 255 / 57%);
+  color: rgb(255 255 255 / 100%);
 }
 
 @keyframes morph {
+
   0%,
   100% {
     border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
   }
+
   34% {
     border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
   }
+
   67% {
     border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
   }
@@ -112,7 +89,9 @@ section.bannersize {
   height: 320px;
   object-fit: cover;
   animation: morph 3.5s linear infinite;
+  z-index: 0;
 }
+
 /* Footer */
 
 section.footer-style {
@@ -120,11 +99,11 @@ section.footer-style {
   left: 0;
   bottom: 12px;
   width: 100%;
-  background: #29277a;
+  background: #002C3B;
   padding-top: 60px;
 }
 
-footer.top > img {
+footer.top>img {
   height: 50px;
   margin: 0 auto 50px;
 }
@@ -172,12 +151,7 @@ footer h2 {
   letter-spacing: 1px;
   color: rgb(255 255 255 / 96%);
 }
-
-footer p {
-  margin: 0;
-}
-
-.legal > a {
+.legal>a {
   margin: 0 0 0 4px;
 }
 
@@ -185,7 +159,7 @@ footer p {
   font-size: 12px;
 }
 
-.legal > span {
+.legal>span {
   margin-right: 10px;
 }
 
@@ -200,7 +174,7 @@ footer.top .socials {
   height: 56px;
 }
 
-footer.top .socials > a {
+footer.top .socials>a {
   font-size: 24px;
 }
 
@@ -232,12 +206,12 @@ footer.top .socials > a {
     translate: 0;
   }
 
-  footer.top > img {
+  footer.top>img {
     margin: 0 0 50px;
   }
 }
 
-@media (width >= 640px) {
+@media (width >=640px) {
   footer {
     margin: 0 auto;
     max-width: 580px;
@@ -267,23 +241,23 @@ footer a {
 }
 
 .portafoliocolor {
-  background-color: #29277a;
+  background-color: #002C3B;
 }
 
 /* CONTACTO */
 
 .contactocolor {
-  background-color: #1f1d58;
+  background-color: hsl(195, 100%, 7%);
 }
 
 .card {
-  background-color: #1f1d58;
+  background-color: hsl(195, 100%, 7%);
   color: white;
 }
 
 .btn-primary {
-  background-color: #29277a !important;
-  border-color: #29277a;
+  background-color: hsl(195, 100%, 7%) !important;
+  border-color: hsl(195, 97%, 15%);
 }
 
 #portfolio .image-top {
@@ -293,6 +267,25 @@ footer a {
   background-position: center;
   background-color: 29277A;
 }
+svg {
+  display: none;
+}
+
+#canvas {
+  filter: url('#shadowed-goo');
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+
+.shadow {
+  background-color: #002C3B;
+  padding: 0px;
+  margin: 0px;
+}
 
 #botonIrArriba {
   display: none;
@@ -301,7 +294,7 @@ footer a {
   right: 20px;
   font-size: 20px;
   padding: 10px;
-  background-color: #45448f;
+  background-color: #51D4FF;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -312,4 +305,3 @@ footer a {
 #botonIrArriba:hover {
   opacity: 0.7;
 }
-
