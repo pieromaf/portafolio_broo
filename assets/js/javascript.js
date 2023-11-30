@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
 
   new TypeIt("#miNombre", {
-    strings: "Angel Aguilera",
+    strings: "Angel Aguilera.",
     speed: 50,
     waitUntilVisible: true,
 }).go();
