@@ -283,3 +283,22 @@ footer a {
   background-size: cover;
   background-position: center;
 }
+
+#botonIrArriba {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #45448f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+#botonIrArriba:hover {
+  opacity: 0.7;
+}
