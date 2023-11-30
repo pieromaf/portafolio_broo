@@ -23,3 +23,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
   
+
+  new TypeIt("#miNombre", {
+    strings: "Angel Aguilera",
+    speed: 50,
+    waitUntilVisible: true,
+}).go();
